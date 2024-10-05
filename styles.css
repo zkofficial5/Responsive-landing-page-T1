@@ -1,0 +1,274 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFB3C1;
+}
+
+/* navbar */
+header {
+    background-color: #FF758F;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFEB3B;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-icon, .cart-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* home Section */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 20px;
+    background-color: #FCE4EC;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #cc0429;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    color: #cc0429;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #fa3e60;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* product Section */
+.product-section {
+    padding: 80px 20px;
+    background-color: #FF8FA3;
+}
+
+.product-section h2 {
+    text-align: center;
+    color: #8d031d;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-item {
+    text-align: center;
+    background-color: #FFB3C1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.product-item img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    color: #fc5170;
+}
+
+.product-item p {
+    font-weight: bold;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #FF758F;
+    color: #faf3f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #FF758F;
+}
+
+/* about Section */
+.about-us-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.about-us-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    background-color: #FFB3C1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+    color: white;
+    padding: 20px;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #FFB3C1;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #FF758F;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-container {
+    position: fixed;
+    top: 0;
+    right: -400px; /* cart hidden */
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out; /* transition */
+    z-index: 1000;
+    padding: 20px;
+}
+
+.cart-container.active {
+    right: 0; /* slide in when the cart is active */
+}
+
+.cart-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.home-section {
+    margin-top: 80px;
+    text-align: center;
+    background: url('images/bg.png') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}

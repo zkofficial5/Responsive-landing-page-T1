@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe official website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- nav Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Bakery Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#drinks">drinks</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <input type="text" id="search-bar" placeholder="Search..">
+                <button class="search-icon">🔍</button>
+                <button class="cart-btn">🛒</button>
+            </div>
+
+            <div class="cart-container">
+                <button class="close-cart">✖️</button>
+                <div class="cart-content">
+                    <h3>Your Cart</h3>
+                    <p class="cart-empty">No items added to the cart.</p>
+                    <div class="cart-items"></div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+    <!-- home Section -->
+    <section id="home" class="home-section">
+        <div class="hero-content">
+            <h1>INDULGE IN HEAVENLY SWEET DELIGHTS</h1>
+            <p> <strong>we serve the best, coffee? drink? pastries? your call!<strong></p>
+            <button class="cta-btn">Get Yours Now</button>
+        </div>
+        <div class="hero-image">
+        </div>
+    </section>
+
+    <!-- drinks Section -->
+    <section id="drinks" class="product-section">
+        <h2>Our Beverages</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/coffe1.png" alt="Mango Cheesecake">
+                <h3>Caramel Macchiato</h3>
+                <p>$2.99</p>
+                <button class="add-to-cart" data-item="Mango Cheesecake">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/coffe2.png" alt="Backed Cheesecake">
+                <h3>Mapple Latte</h3>
+                <p>$2.99</p>
+                <button class="add-to-cart" data-item="Backed Cheesecake">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/drink.jpg" alt="Fruity Summer Cheesecake">
+                <h3>Falooda</h3>
+                <p>$2.99</p>
+                <button class="add-to-cart" data-item="Fruity Summer Cheesecake">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- cakes Section -->
+    <section id="cakes" class="product-section">
+        <h2>Our Cakes</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/pastry1.jpg" alt="Mango Cheesecake">
+                <h3>Crimson Torte</h3>
+                <p>$4.99</p>
+                <button class="add-to-cart" data-item="Mango Cheesecake">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/pastry2.png" alt="Backed Cheesecake">
+                <h3>Espresso Crostata</h3>
+                <p>$4.99</p>
+                <button class="add-to-cart" data-item="Backed Cheesecake">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/pastry3.jpg" alt="Fruity Summer Cheesecake">
+                <h3>Strawberry Cheesecake</h3>
+                <p>$4.99</p>
+                <button class="add-to-cart" data-item="Fruity Summer Cheesecake">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- about Section -->
+    <section id="about" class="about-us-section">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="About Us Image">
+                </div>
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>
+                        We are a dedicated team focused on providing the best services to our customers. Our mission is to offer quality and value in everything we do.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script defer src="script.js"></script>
+</body>
+</html>
